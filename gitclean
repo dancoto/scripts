@@ -1,0 +1,5 @@
+#!/usr/local/bin/zsh
+# Clean git branches by passing in a prefix
+# ex. gitclean feature
+# this deletes all local branches that start with feature
+git branch -D `git branch --list $1'/*'`

@@ -1,0 +1,7 @@
+#!/usr/local/bin/zsh
+# dedupes path
+echo "Current Path"
+echo $PATH
+PATH=$(zsh -fc "typeset -TU P=$PATH p; echo \$P")
+echo "New Path"
+echo $PATH
